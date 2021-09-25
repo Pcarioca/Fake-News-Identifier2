@@ -1,7 +1,7 @@
 var btn = $('#button');
 
 $(window).scroll(function() {
-  if ($(window).scrollTop() > 30) {
+  if ($(window).scrollTop() > 1) {
     btn.addClass('show');
   } else {
     btn.removeClass('show');
