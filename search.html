@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/about.css">
+    <link rel="stylesheet" href="assets/about-me.css">
+
     <link rel="stylesheet" href="assets/menu.css">
     <link rel="stylesheet" href="assets/index.CSS">
     <link rel="stylesheet" href="assets/app.css">
@@ -18,10 +19,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e85267642f.js" crossorigin="anonymous"></script>
-    <title>Metnally Healthy</title>
+    <title>Mentally Healthy</title>
     <link rel="shortcut icon" href="assets/favicon_.png" type="image/x-icon">
     <link rel="icon" href="assets/favicon_.png" type="image/png">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
 </head>
 
 <body>
@@ -50,7 +50,6 @@
           Too bad the menu has to be inside of the button
           but hey, it's pure CSS magic.
           -->
-          <!-- By the way, if you're reading this you're cool. Cotact me:) insta: @andrewww_mnt -->
             <ul id="menu">
                 <a href="index.html">
                     <li>Home</li>
@@ -61,7 +60,9 @@
                 <a href="search.html">
                     <li>Search</li>
                 </a>
-                <a href="submit.html"><li>Make a submission</li></a>
+                <a href="submit.html">
+                    <li>Make a submission</li>
+                </a>
                 <a href="about.html">
                     <li>Info</li>
                 </a>
@@ -73,8 +74,7 @@
     </nav>
 
 
-    <div class="container" id="h">
-
+    <div class="container">
         <div class="row height">
             <div class="col d-flex justify-content-center height">
                 <img src="assets/cover_final.png" alt="logo" id="head"
@@ -84,34 +84,20 @@
         <div class="row" style="height: 10vh;"></div>
         <div class="row">
             <div class="col">
-                <h1 class="mid">Enter your submission</h1>
+                <h1 class="mid">Search Websites</h1>
             </div>
         </div>
+        <div class="input-group">
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <button type="button" id="search" class="btn btn-outline-secondary">Search</button>
 
-        <div class="row">
 
-            <div class="col-lg-7">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">https://</span>
-                    </div>
-                    <input type="text" class="form-control" placeholder="URL" aria-label="URL"
-                        aria-describedby="basic-addon1" id="input">
-                </div>
-            </div>
-            
-            <div class="col-lg d-flex justify-content-around">
-                <button type="submit" title="Trustworthy Website" class="btn btn-primary max-button" id="trust">Trust this website</button>
-                <button type="submit" title="Untrustworthy Website" class="btn btn-primary max-button" id="no-trust">Don't trust this
-                    website</button>
-            </div>
-            
+
         </div>
-
-    </div>
-
-
-
+        <div class="row" style="height: 10vh;"></div>
+        <div class="row justify-content-center">
+            <h4 class="white mid">This website has been voted <b><span id="trust"></span></b> times as trustworthy and <b><span id="untrust"></span></b> untrustworthy</h4>
+        </div>
     </div>
     <!-- end of container -->
     <footer class="text-center text-white" style="background-color: #ffffff2f;">
@@ -129,31 +115,6 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <script>
-        const upVote = document.querySelector("#trust");
-        const downVote = document.querySelector("#no-trust");
-        const input = document.querySelector("#input");
-        const callApis = (isSafe) => (isSafe) => {
-            const apiKey = "138ef748ad9a471ba2fe947ae432145d";
-            axios.get("https://ipgeolocation.abstractapi.com/v1/?api_key="+apiKey)
-                .then(data => {
-                        axios.post('http://localhost:5000', {url: input.value, isSafe: isSafe, ip: data.data.ip_address})
-                            .then(data => {
-                                alert("You voted succesfully")
-                                setTimeout( window.location = "app.html",2000)
-                            }
-                                )
-                            .catch(err => {
-                                if(err.response.status === 401) {
-                                    alert("You aleardy voted")
-                                }
-                            })
-                            })
-                            
-            }
-        upVote.addEventListener('click', callApis(true))
-        downVote.addEventListener('click', callApis(false))
-    </script>
 </body>
 
 </html>
