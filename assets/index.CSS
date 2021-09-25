@@ -108,7 +108,7 @@ a:hover{
   
   .content {
     width: 77%;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     font-family: 'Merriweather', serif;
     font-size: 17px;
     color: #6c767a;

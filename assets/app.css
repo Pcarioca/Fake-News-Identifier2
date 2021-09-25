@@ -22,7 +22,7 @@ body{
 .sq-row {
     height: fit-content;
     width: auto;
-    margin-bottom: 165px;
+    /* margin-bottom: 165px; */
 }
 
 /* carousels */
@@ -151,9 +151,9 @@ body{
         width: 70%;
     }
 
-    .sq-row {
+    /* .sq-row {
         height: 300px;
-    }
+    } */
 }
 
 @media screen and (max-width:992px) {
