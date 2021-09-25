@@ -22,12 +22,18 @@
     <title>Mentally Healthy</title>
     <link rel="shortcut icon" href="assets/favicon_.png" type="image/x-icon">
     <link rel="icon" href="assets/favicon_.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
 </head>
 
 <body>
     <!--    Made by Erik Terwan    -->
     <!--   24th of November 2015   -->
     <!--        MIT License        -->
+    <style>
+        .none{
+            display: none;
+        }
+    </style>
     <nav role="navigation">
         <div id="menuToggle">
             <!--
@@ -88,7 +94,7 @@
             </div>
         </div>
         <div class="input-group">
-            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button">
+            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" id="input">
             <button type="button" id="search" class="btn btn-outline-secondary">Search</button>
 
 
@@ -96,7 +102,7 @@
         </div>
         <div class="row" style="height: 10vh;"></div>
         <div class="row justify-content-center">
-            <h4 class="white mid">This website has been voted <b><span id="trust"></span></b> times as trustworthy and <b><span id="untrust"></span></b> untrustworthy</h4>
+            <h4 class="white mid none" id="info">This website has been voted <b><span id="trust"></span></b> times as trustworthy and <b><span id="untrust"></span></b> untrustworthy</h4>
         </div>
     </div>
     <!-- end of container -->
@@ -115,6 +121,25 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <script>
+        const input = document.querySelector("#input");
+        const button = document.querySelector("#search")
+        const trust = document.querySelector("#trust");
+        const untrust = document.querySelector("#untrust")
+        const info = document.querySelector("#info")
+        button.addEventListener("click", () => {
+            axios.get('http://localhost:5000?url='+input.value)
+                .then(data => {
+                    info.classList.remove("none");
+                    trust.innerHTML = data.data.upVotes;
+                    untrust.innerHTML = data.data.downVotes;
+                })
+                .catch(err => {
+                    alert("Website doesn't exists in database")
+                    window.location = "submit.html";
+                })
+        })
+    </script>
 </body>
 
 </html>
