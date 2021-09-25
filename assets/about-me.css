@@ -14,3 +14,12 @@ iframe{
         height:80vh;
     }
 }
+#banner{
+    width:100%;
+}
+h1{
+    color:white;
+}
+.mid{
+    text-align: center;
+}
