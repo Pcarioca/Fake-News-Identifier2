@@ -62,7 +62,7 @@ body{
 }
 
 .slides::-webkit-scrollbar-thumb {
-    background: #F56B11;
+    background: #212529;
     border-radius: 10px;
 }
 
@@ -120,14 +120,14 @@ body{
     display: inline-flex;
     width: 1.5rem;
     height: 1.5rem;
-    background: #f56c1121;
+    background: #21252921;
     text-decoration: none;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
     margin: 0 0 0.5rem 0;
     position: relative;
-    color: #F56B11;
+    color: #212529;
 }
 
 .slider>a:active {

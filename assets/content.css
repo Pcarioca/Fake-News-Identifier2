@@ -12,7 +12,7 @@
     height: 10px;
 }
 .content::-webkit-scrollbar-thumb {
-    background: #f56c1132;
+    background: #21252932;
     border-radius: 10px;
 }
 .content > h3{
@@ -29,11 +29,17 @@
     font-size: medium;
 }
 h4 > a{
-    color:#F56B11;
-    transition-duration: 0.3ds;
+    color:#212529;
+    transition-duration: 0.3s;
+}
+@media (prefers-reduced-motion) {
+    h4 > a{
+        
+        transition-duration: 0s;
+    }
 }
 h4 > a:hover{
-    color:#d86112;
+    color:#030303;
     text-decoration: none;
 }
 a{

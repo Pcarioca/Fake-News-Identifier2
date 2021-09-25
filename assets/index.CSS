@@ -2,12 +2,12 @@
     font-family: 'Arimo', sans-serif;
 }
 body{
-    background: #F56B11;
+    background: #212529;
     overflow-anchor: none;
 }
 body::-webkit-scrollbar {
     width: 11px;
-    background:#F56B11
+    background:#212529;
   }
   
   /* Track */
@@ -49,7 +49,7 @@ a:hover{
     font-size: 30px;
 }
 #take{
-    color: #F56B11;
+    color: #212529;
 }
 
 @media screen and (max-width:1000px) {

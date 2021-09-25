@@ -33,7 +33,7 @@
  #menuToggle a
  {
    text-decoration: none;
-   color: #F56B11;
+   color: #212529;
    
    transition: color 0.2s ease;
  }
@@ -144,6 +144,11 @@
    
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
+ @media (prefers-reduced-motion) {
+  #menu {
+    transition: transform 0s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+}
  
  #menu li
  {
