@@ -4,6 +4,16 @@
 *:active, *:hover {
     border:10% solid #ffffff;
 }
+.mid{
+    text-align: center;
+    color: #ffffff;
+}
+#h{
+    min-height: 85vh;
+}
+.max-button{
+    height:40px;
+}
 body{
     background: #212529;
     overflow-anchor: none;

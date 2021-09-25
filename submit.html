@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/about-me.css">
-
+    <link rel="stylesheet" href="assets/about.css">
     <link rel="stylesheet" href="assets/menu.css">
     <link rel="stylesheet" href="assets/index.CSS">
     <link rel="stylesheet" href="assets/app.css">
@@ -19,7 +18,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e85267642f.js" crossorigin="anonymous"></script>
-    <title>Mentally Healthy</title>
+    <title>Metnally Healthy</title>
     <link rel="shortcut icon" href="assets/favicon_.png" type="image/x-icon">
     <link rel="icon" href="assets/favicon_.png" type="image/png">
 </head>
@@ -50,6 +49,7 @@
           Too bad the menu has to be inside of the button
           but hey, it's pure CSS magic.
           -->
+          <!-- By the way, if you're reading this you're cool. Cotact me:) insta: @andrewww_mnt -->
             <ul id="menu">
                 <a href="index.html">
                     <li>Home</li>
@@ -57,9 +57,7 @@
                 <a href="app.html">
                     <li>App</li>
                 </a>
-                <a href="submit.html">
-                    <li>Make a submission</li>
-                </a>
+                <a href="submit.html"><li>Make a submission</li></a>
                 <a href="about.html">
                     <li>Info</li>
                 </a>
@@ -71,35 +69,44 @@
     </nav>
 
 
-    <div class="container">
-        <div class="row" style="height:15vh">
+    <div class="container" id="h">
 
+        <div class="row height">
+            <div class="col d-flex justify-content-center height">
+                <img src="assets/cover_final.png" alt="logo" id="head"
+                    class="mx-auto d-block center-block img-responsive">
+            </div>
         </div>
+        <div class="row" style="height: 10vh;"></div>
         <div class="row">
             <div class="col">
-                <h1 class="mid">We are <b>Alpha Canis Majoris</b></h1>
+                <h1 class="mid">Enter your submission</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                <img src="assets/α CMa banner.png" alt="Alpha Canis Majoris Banner" id="banner">
-            </div>
-        </div>
-        <div class="row" style="height:15vh">
 
-        </div>
         <div class="row">
-            <div class="col-lg-3 d-flex justify-content-center">
-                <img src="assets/andreww.jpg" alt="Andrei Munteanu Headshot" class="photo">
+
+            <div class="col-lg-7">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">https://</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="URL" aria-label="URL"
+                        aria-describedby="basic-addon1">
+                </div>
             </div>
-            <!-- <div class="hide col" style="height:10vh"></div> -->
-            <div class="col-lg">
-                <h3 class="white strong midd"> <strong> Andrei Munteanu </strong> </h3> <br>
-                <p class="white midd"> Andrei is a huge advocate of Web development and also for Mental Health, which is why he loves
-                    coding for the community. As a Microsoft certified web developer, he is always looking forward to new
-                    opportunities. Andrei is from Romania and loves working with his teammates even though he never even met them in real life!</p>
+            
+            <div class="col-lg d-flex justify-content-around">
+                <button type="submit" title="Trustworthy Website" class="btn btn-primary max-button">Trust this website</button>
+                <button type="submit" title="Untrustworthy Website" class="btn btn-primary max-button">Don't trust this
+                    website</button>
             </div>
+            
         </div>
+
+    </div>
+
+
 
     </div>
     <!-- end of container -->

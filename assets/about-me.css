@@ -23,3 +23,28 @@ h1{
 .mid{
     text-align: center;
 }
+.photo{
+    width:90%;
+    border-radius: 50%;
+    max-width: 229px;
+}
+.strong{
+    font-size: 35px;
+}
+.white{
+    color:white;
+}
+.hide{
+    display: none;
+}
+@media screen and (max-width:992px){
+    .hide{
+        display: initial;
+    }
+    .midd{
+        text-align: center;
+    }
+    .photo{
+        margin-bottom: 3%;
+    }
+}
