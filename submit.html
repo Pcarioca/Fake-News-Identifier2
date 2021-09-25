@@ -21,6 +21,7 @@
     <title>Metnally Healthy</title>
     <link rel="shortcut icon" href="assets/favicon_.png" type="image/x-icon">
     <link rel="icon" href="assets/favicon_.png" type="image/png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.4/axios.min.js"></script>
 </head>
 
 <body>
@@ -92,13 +93,13 @@
                         <span class="input-group-text" id="basic-addon1">https://</span>
                     </div>
                     <input type="text" class="form-control" placeholder="URL" aria-label="URL"
-                        aria-describedby="basic-addon1">
+                        aria-describedby="basic-addon1" id="input">
                 </div>
             </div>
             
             <div class="col-lg d-flex justify-content-around">
-                <button type="submit" title="Trustworthy Website" class="btn btn-primary max-button">Trust this website</button>
-                <button type="submit" title="Untrustworthy Website" class="btn btn-primary max-button">Don't trust this
+                <button type="submit" title="Trustworthy Website" class="btn btn-primary max-button" id="trust">Trust this website</button>
+                <button type="submit" title="Untrustworthy Website" class="btn btn-primary max-button" id="no-trust">Don't trust this
                     website</button>
             </div>
             
@@ -125,6 +126,31 @@
         </div>
         <!-- Copyright -->
     </footer>
+    <script>
+        const upVote = document.querySelector("#trust");
+        const downVote = document.querySelector("#no-trust");
+        const input = document.querySelector("#input");
+        const callApis = (isSafe) => (isSafe) => {
+            const apiKey = "138ef748ad9a471ba2fe947ae432145d";
+            axios.get("https://ipgeolocation.abstractapi.com/v1/?api_key="+apiKey)
+                .then(data => {
+                        axios.post('http://localhost:5000', {url: input.value, isSafe: isSafe, ip: data.data.ip_address})
+                            .then(data => {
+                                alert("You voted succesfully")
+                                setTimeout( window.location = "app.html",2000)
+                            }
+                                )
+                            .catch(err => {
+                                if(err.response.status === 401) {
+                                    alert("You aleardy voted")
+                                }
+                            })
+                            })
+                            
+            }
+        upVote.addEventListener('click', callApis(true))
+        downVote.addEventListener('click', callApis(false))
+    </script>
 </body>
 
 </html>
