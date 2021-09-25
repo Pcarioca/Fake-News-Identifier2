@@ -1,6 +1,9 @@
 *{
     font-family: 'Arimo', sans-serif;
 }
+*:active, *:hover {
+    border:10% solid #ffffff;
+}
 body{
     background: #212529;
     overflow-anchor: none;
