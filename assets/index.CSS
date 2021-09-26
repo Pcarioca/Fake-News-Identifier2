@@ -63,6 +63,13 @@ a:hover{
 #take{
     color: #212529;
 }
+/* 
+footer{
+  position: absolute;
+  left: 0px;
+  right:0px;
+  bottom: 0px;
+} */
 
 #button {
     display: inline-block;
