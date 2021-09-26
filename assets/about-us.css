@@ -15,7 +15,9 @@ iframe{
     }
 }
 #banner{
-    width:100%;
+    width:90%;
+    border: 5px solid white;
+    border-radius: 2%;
 }
 h1{
     color:white;
