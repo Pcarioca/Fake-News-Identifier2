@@ -29,3 +29,14 @@ a:hover{
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
+div.parent {
+	text-align: center;
+	}
+/* ul { 
+	display: inline-block; 
+	text-align: left; 
+	} */
+    ul {
+        display: table;
+        margin: 0 auto;
+      }
