@@ -28,49 +28,7 @@
     <!--        MIT License        -->
     <!-- Back to top button -->
     <script src="https://kit.fontawesome.com/e85267642f.js" crossorigin="anonymous"></script>
-    <a id="button"></a>
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-      A fake / hidden checkbox is used as click reciever,
-      so you can use the :checked selector on it.
-      -->
-            <input type="checkbox" />
-
-            <!--
-      Some spans to act as a hamburger.
-      
-      They are acting like a real hamburger,
-      not that McDonalds stuff.
-      -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!--
-      Too bad the menu has to be inside of the button
-      but hey, it's pure CSS magic.
-      -->
-      <ul id="menu">
-        <a href="index.html">
-            <li><i class="fas fa-home"></i> Home</li>
-        </a>
-        <a href="app.html">
-            <li><i class="fas fa-mobile-alt"></i> App</li>
-        </a>
-        <a href="search.html">
-            <li><i class="fas fa-search"></i> Search</li>
-        </a>
-        <a href="submit.html"><li><i class="fas fa-check-circle"></i>Make a submission</li></a>
-        <a href="about.html">
-            <li><i class="fas fa-info-circle"></i> Info</li>
-        </a>
-        <a href="about-us.html">
-            <li><i class="fas fa-address-card"></i> About us & Contact</li>
-        </a>
-    </ul>
-        </div>
-    </nav>
+    <div id="nav"></div>
     <div class="container">
         <div class="row height">
             <div class="col d-flex justify-content-center height">
@@ -428,8 +386,7 @@
                                 <h3>Lorem ipsum</h3>
                                 <hr>
 
-                                <h4>website: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>website: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.</p>
@@ -441,8 +398,7 @@
                                 <h3>Lorem ipsum</h3>
                                 <hr>
 
-                                <h4>website: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>website: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.</p>
@@ -465,8 +421,7 @@
                                 <h3>Lorem ipsum</h3>
                                 <hr>
 
-                                <h4>website: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>website: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.</p>
@@ -519,8 +474,7 @@
                                 <h3>Thought Catalogue</h3>
                                 <hr>
 
-                                <h4>website: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>website: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.</p>
@@ -532,8 +486,7 @@
                                 <h3>Bipolar Blog</h3>
                                 <hr>
 
-                                <h4>website: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>website: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.</p>
@@ -545,8 +498,7 @@
                                 <h3>The Mighty: Mental Health</h3>
                                 <hr>
 
-                                <h4>website: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>website: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.
@@ -751,8 +703,7 @@
                                 <h3>Lorem Ipsum</h3>
                                 <hr>
 
-                                <h4>link: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>link: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua.</p>
@@ -776,8 +727,7 @@
                                 <h3>Lorem ipsum</h3>
                                 <hr>
 
-                                <h4>link: <a
-                                        href="https://example.com/">https://example.com/</a>
+                                <h4>link: <a href="https://example.com/">https://example.com/</a>
                                 </h4>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua..
@@ -789,336 +739,7 @@
             </div>
         </div>
 
-        <!-- <div class="row sq-row d-flex justify-content-center">
-            <div class="col-lg square d-flex justify-content-center height">
-                <div class="slider">
-                    <div class="bl">
-                        <p>International Resources II</p>
-                        <a href="#slide-46">1</a>
-                        <a href="#slide-47">2</a>
-                        <a href="#slide-48">3</a>
-                        <a href="#slide-49">4</a>
-                        <a href="#slide-50">5</a>
 
-                    </div>
-                    <div class="slides">
-                        <div id="slide-46">
-                            <div class="content">
-
-                                <h3>Lorem ipsum</h3>
-                                <hr>
-
-                                <h4>website: <a
-                                        href="https://www.patientsengage.com/">https://www.patientsengage.com/</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-47">
-                            <div class="content">
-
-                                <h3>Lorem ipsum</h3>
-                                <hr>
-
-                                <h4>website: <a href="https://www.thecalmzone.net/">https://www.thecalmzone.net/</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-48">
-                            <div class="content">
-
-                                <h3>Lorem ipsum</h3>
-                                <hr>
-
-                                <h4>website: <a
-                                        href="https://anxietypanicsupport.com/">https://anxietypanicsupport.com/</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-49">
-                            <div class="content">
-
-                                <h3>Lorem ipsum </h3>
-                                <hr>
-
-                                <h4>website: <a href="http://eufami.org/">http://eufami.org/</a></h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-50">
-                            <div class="content">
-
-                                <h3>Lorem ipsum</h3>
-                                <hr>
-
-                                <h4>website: <a
-                                        href="https://example.com/">https://www.euro.who.int/en/health-topics/noncommunicable-diseases/mental-health</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg square d-flex justify-content-center height">
-                <div class="slider">
-                    <div class="bl">
-                        <p>Social Media Pages</p>
-                        <a href="#slide-51">1</a>
-                        <a href="#slide-52">2</a>
-                        <a href="#slide-53">3</a>
-                        <a href="#slide-54">4</a>
-                        <a href="#slide-55">5</a>
-
-                    </div>
-                    <div class="slides">
-                        <div id="slide-51">
-                            <div class="content">
-
-                                <h3>Lorem ipsum</h3>
-                                <hr>
-
-                                <h4>Lorem ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-52">
-                            <div class="content">
-
-                                <h3>Lorem ipsum</h3>
-                                <hr>
-
-                                <h4>Lorem ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-53">
-                            <div class="content">
-
-                                <h3>@magnifywellnesshq </h3>
-                                <hr>
-
-                                <h4>Lorem ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-54">
-                            <div class="content">
-
-                                <h3>@cura.project</h3>
-                                <hr>
-
-                                <h4>Lorem ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-55">
-                            <div class="content">
-
-                                <h3>@mentalhealthio</h3>
-                                <hr>
-
-                                <h4>Lorem ipsum</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg square d-flex justify-content-center height">
-                <div class="slider">
-                    <div class="bl">
-                        <p>Romanian National News</p>
-                        <a href="#slide-56">1</a>
-                        <a href="#slide-57">2</a>
-                        <a href="#slide-58">3</a>
-                        <a href="#slide-59">4</a>
-                        <a href="#slide-60">5</a>
-
-                    </div>
-                    <div class="slides">
-                        <div id="slide-56">
-                            <div class="content">
-
-                                <h3>Lorem Ipsum</h3>
-                                <hr>
-
-                                <h4>link: <a
-                                        href="https://www.psychiatry.org/patients-families/what-is-mental-illness">https://www.psychiatry.org/patients-families/what-is-mental-illness</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-57">
-                            <div class="content">
-
-                                <h3>Three Things To Know for BIPOC Mental Health Awareness Month</h3>
-                                <hr>
-
-                                <h4>link <a
-                                        href="https://www.yahoo.com/lifestyle/three-things-know-bipoc-mental-164728835.html">https://www.yahoo.com/lifestyle/three-things-know-bipoc-mental-164728835.html</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-58">
-                            <div class="content">
-
-                                <h3>What causes depression?</h3>
-                                <hr>
-
-                                <h4>link: <a
-                                        href="https://www.health.harvard.edu/mind-and-mood/what-causes-depression">https://www.health.harvard.edu/mind-and-mood/what-causes-depression</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-59">
-                            <div class="content">
-
-                                <h3>Uncovering the Truth of Racial Trauma</h3>
-                                <hr>
-
-                                <h4>link: <a
-                                        href="https://www.apa.org/pubs/highlights/spotlight/issue-128">https://www.apa.org/pubs/highlights/spotlight/issue-128</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                        <div id="slide-60">
-                            <div class="content">
-
-                                <h3>Anxiety Disorders and Anxiety Attacks</h3>
-                                <hr>
-
-                                <h4>website: <a
-                                        href="https://www.helpguide.org/articles/anxiety/anxiety-disorders-and-anxiety-attacks.htm">https://www.helpguide.org/articles/anxiety/anxiety-disorders-and-anxiety-attacks.htm</a>
-                                </h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="row sq-row d-flex justify-content-center">
-            <div class="col-lg square d-flex justify-content-center height">
-                <div class="slider">
-                    <div class="bl">
-                        <p>Apps</p>
-                        <a href="#slide-61">1</a>
-                        <a href="#slide-62">2</a>
-                        <a href="#slide-63">3</a>
-                        <a href="#slide-64">4</a>
-                        <a href="#slide-65">5</a>
-
-                    </div>
-                    <div class="slides">
-                        <div id="slide-61">
-                            <div class="content">
-
-                                <h3>Lorem ipsum</h3>
-                                <hr>
-
-                                <h4><a href="https://apps.apple.com/in/app/magnify-wellness/id1526188573">App
-                                        Store</a>,
-                                    <a
-                                        href="https://play.google.com/store/apps/details?id=org.reactjs.native.example.Magnify&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Google
-                                        Play</a>
-                                </h4>
-                                <p>Magnify’s mission is to provide high-quality resources through the power of
-                                    technology to ensure everyone gets equal access to mental wellness support.
-                                    Through
-                                    a therapetic chatbot, gratitude journal, mood check in, video game, and way
-                                    more,
-                                    this app's completely free mental health resources aspire to reach everyone who
-                                    needs them.</p>
-                            </div>
-                        </div>
-                        <div id="slide-62">
-                            <div class="content">
-
-                                <h3>Ayana App</h3>
-                                <hr>
-
-                                <h4><a href=""></a> <a href="https://apps.apple.com/us/app/ayana/id1489697292">App
-                                        Store</a></h4>
-                                <p>The Ayana app, founded by Eric Coly, uses detailed questionnaires to connect
-                                    members
-                                    of marginalized communities with compatible licensed therapists based on their
-                                    background, needs and identities.</p>
-                            </div>
-                        </div>
-                        <div id="slide-63">
-                            <div class="content">
-
-                                <h3>Shine App</h3>
-                                <hr>
-
-                                <h4> <a href="https://apps.apple.com/US/app/id1293721589?mt=8">App Store</a> <a
-                                        href="https://play.google.com/store/apps/details?id=com.shinetext.shine&hl=en_US">Google
-                                        Play</a></h4>
-                                <p>The Black-owned app was created in 2016, but its offerings—including more than
-                                    600
-                                    guided meditations, morning inspiration texts, customizable mental health tool
-                                    kits
-                                    and community forums—are in higher demand in light of two ongoing pandemics.</p>
-                            </div>
-                        </div>
-                        <div id="slide-64">
-                            <div class="content">
-
-                                <h3>Minds of the Culture</h3>
-                                <hr>
-
-                                <h4><a href="https://play.google.com/store/apps/details?id=com.he6ecb72aef1&hl=en_US">Google
-                                        Play</a></h4>
-                                <p>"The Safe Place" Is a Minority Mental Health App geared towards the Black
-                                    Community.
-                                    African Americans are 20% more likely to experience serious mental health
-                                    problems
-                                    than the rest of the general population. However, many black people still do not
-                                    wish to seek professional help for their mental illnesses.</p>
-                            </div>
-                        </div>
-                        <div id="slide-65">
-                            <div class="content">
-
-                                <h3>Mindshift CBT - Anxiety Canada</h3>
-                                <hr>
-
-                                <h4>
-                                    <a href="https://apps.apple.com/ca/app/mindshift/id634684825">App Store</a>, <a
-                                        href="https://play.google.com/store/apps/details?id=com.bstro.MindShift&hl=en">Google
-                                        Play</a>
-                                </h4>
-                                <p>Break free from anxiety and stress using this free evidence-based anxiety
-                                    management
-                                    app. MindShift CBT uses scientifically proven strategies based on Cognitive
-                                    Behavioral Therapy (CBT).</p>
-                            </div>
-                        </div>
-                    </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
         <br><br><br>
         <!-- script for preventing page to shift.  -->
         <script>
@@ -1131,11 +752,12 @@
             });
         </script>
     </div>
+
     <div id="footer"></div>
     <script src="assets/index.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="assets/button.js"></script>
-    
+
 </body>
 
 </html>

@@ -33,6 +33,9 @@ a:hover{
     text-align: center;
     list-style-position: inside;
   }
+  .bigger{
+      font-size: 30px;
+  }
 /* ul { 
 	display: inline-block; 
 	text-align: left; 
