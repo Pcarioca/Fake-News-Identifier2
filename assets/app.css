@@ -25,7 +25,7 @@ body{
     /* margin-bottom: 165px; */
 }
 
-/* carousels */
+
 
 .slider {
     width: 280px;
@@ -89,9 +89,6 @@ body{
     font-size: 100px;
 }
 
-/* .slides>div:target {
-       transform: scale(0.8); 
-} */
 
 
 
@@ -138,22 +135,17 @@ body{
     background: #000;
 }
 
-/* Don't need button navigation */
 @supports (scroll-snap-type) {
     .slider>a {
         display: none;
     }
 }
 
-/* /carousels */
 @media only screen and (min-width:992px) {
     #head {
         width: 70%;
     }
 
-    /* .sq-row {
-        height: 300px;
-    } */
 }
 
 @media screen and (max-width:992px) {

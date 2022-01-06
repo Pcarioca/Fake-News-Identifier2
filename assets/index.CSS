@@ -22,12 +22,12 @@ body::-webkit-scrollbar {
     background:#212529;
   }
   
-  /* Track */
+  
   body::-webkit-scrollbar-track {
     background: #ffffff6a;
   }
   
-  /* Handle */
+  
   body::-webkit-scrollbar-thumb {
     background: #ffffffce;
     border-radius: 10px;
@@ -35,7 +35,7 @@ body::-webkit-scrollbar {
     
   }
   
-  /* Handle on hover */
+  
   body::-webkit-scrollbar-thumb:hover {
     background: rgb(255, 255, 255);
   }
@@ -63,13 +63,7 @@ a:hover{
 #take{
     color: #212529;
 }
-/* 
-footer{
-  position: absolute;
-  left: 0px;
-  right:0px;
-  bottom: 0px;
-} */
+
 .center {
   text-align: center;
   list-style-position: inside;
@@ -113,12 +107,8 @@ footer{
     opacity: 1;
     visibility: visible;
   }
-  
-  /* Styles for the content section */
-  
   .content {
     width: 77%;
-    /* margin: 50px auto; */
     font-family: 'Merriweather', serif;
     font-size: 17px;
     color: #6c767a;
