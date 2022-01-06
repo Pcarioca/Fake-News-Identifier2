@@ -31,54 +31,7 @@
     <!--        MIT License        -->
     <!-- Back to top button -->
     <script src="https://kit.fontawesome.com/e85267642f.js" crossorigin="anonymous"></script>
-    <a id="button"></a>
-    <style>
-        .none{
-            display: none;
-        }
-    </style>
-    <nav role="navigation">
-        <div id="menuToggle">
-            <!--
-          A fake / hidden checkbox is used as click reciever,
-          so you can use the :checked selector on it.
-          -->
-            <input type="checkbox" />
-
-            <!--
-          Some spans to act as a hamburger.
-          
-          They are acting like a real hamburger,
-          not that McDonalds stuff.
-          -->
-            <span></span>
-            <span></span>
-            <span></span>
-
-            <!--
-          Too bad the menu has to be inside of the button
-          but hey, it's pure CSS magic.
-          -->
-          <ul id="menu">
-            <a href="index.html">
-                <li><i class="fas fa-home"></i> Home</li>
-            </a>
-            <a href="app.html">
-                <li><i class="fas fa-mobile-alt"></i> App</li>
-            </a>
-            <a href="search.html">
-                <li><i class="fas fa-search"></i> Search</li>
-            </a>
-            <a href="submit.html"><li><i class="fas fa-check-circle"></i>Make a submission</li></a>
-            <a href="about.html">
-                <li><i class="fas fa-info-circle"></i> Info</li>
-            </a>
-            <a href="about-us.html">
-                <li><i class="fas fa-address-card"></i> About us & Contact</li>
-            </a>
-        </ul>
-        </div>
-    </nav>
+    <div id="nav"></div>
 
 
     <div class="container">
@@ -107,21 +60,8 @@
         </div>
     </div>
     <!-- end of container -->
-    <footer class="text-center text-white" style="background-color: #ffffff2f;">
-        <!-- Grid container -->
-        <div class="container pt-4">
-            <!-- Section: Social media -->
-
-        </div>
-        <!-- Grid container -->
-
-        <!-- Copyright -->
-        <div class="text-center text-white p-3" style="background-color: rgba(255, 255, 255, 0.2);">
-            This Website was created by Munteanu Paul Andrei for <a target="_blank"
-                href="https://infoeducatie.ro/"> InfoEducatie </a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+    <div id="footer"></div>
+    <script src="assets/index.js"></script>
     <script>
         const input = document.querySelector("#input");
         const button = document.querySelector("#search")
