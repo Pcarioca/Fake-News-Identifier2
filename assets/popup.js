@@ -1,7 +1,23 @@
 $(document).ready(function() { 
 
+// console.log($("div > h3").html());
+// console.log(document.querySelectorAll("div > h3").innerHTML);
+// console.log("does it work?");
 
+// document.querySelectorAll("div > h3").innerHTML += 'document.querySelectorAll("div > h3")';
 // Get the modal
+
+var i = 1;
+var text = "slide-";
+var textoOnPage = text + i;
+element = document.getElementById(textoOnPage);
+var aux = "";
+while(element!=undefined){
+  element.innerHTML += '<button id="myBtn">Open Modal</button>';
+  i++;
+  var textoOnPage = text + i;
+  element = document.getElementById(textoOnPage);
+}
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -26,5 +42,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+
 
 });
