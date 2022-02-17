@@ -12,9 +12,9 @@ var j;
 var text = "slide-";
 var textoOnPage = text + i;
 element = document.getElementById(textoOnPage);
-var aux = "";
+
 while(element!=undefined){
-  element.innerHTML += '<button id="myBtn" class="myBTN">Open Modal</button>';
+  element.innerHTML += '<button id="myBtn" class="myBTN" >Open Modal</button>';
   i++;
   var textoOnPage = text + i;
   element = document.getElementById(textoOnPage);
@@ -33,19 +33,6 @@ btn.onclick = function() {
   modal.style.display = "block";
   
 }
-// for(j=1;j<=i;i++){
-//   document.getElementsByClassName("myBTN")[j].onclick = function() {
-  
-//     modal.style.display = "block";
-    
-//   }
-// }
-// for(j=1;j<=i;i++){
-//   btn[i].addEventListener('click', () => {
-//     modal.style.display = "block";
-//   });
-// }
-
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";

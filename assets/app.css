@@ -135,6 +135,15 @@ body{
     background: #000;
 }
 
+.myBTN{
+    width:100px;
+    height: 30px;
+    display: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: auto;
+}
+
 @supports (scroll-snap-type) {
     .slider>a {
         display: none;
