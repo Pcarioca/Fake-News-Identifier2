@@ -11,13 +11,13 @@ var i = 1;
 var j;
 var text = "slide-";
 var textoOnPage = text + i;
-element = document.getElementById(textoOnPage);
+element = document.getElementById(textoOnPage)//.children[0];
 
 while(element!=undefined){
   element.innerHTML += '<button id="myBtn" class="myBTN" >Open Modal</button>';
   i++;
   var textoOnPage = text + i;
-  element = document.getElementById(textoOnPage);
+  element = document.getElementById(textoOnPage)//.children[0];
 }
 var modal = document.getElementById("myModal");
 
@@ -26,6 +26,14 @@ var btn = document.getElementsByClassName("myBTN")[0];
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
+
+var buttons = document.getElementsByTagName('button');
+for (var i = 0, len = buttons.length; i < len; i++) {
+    buttons[i].onclick = function (){
+        //myFunction (this);
+        modal.style.display = "block";
+    }
+}
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
