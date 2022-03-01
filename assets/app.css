@@ -136,12 +136,11 @@ body{
 }
 
 .myBTN{
-    width:100px;
+    width:fit-content;
     height: 30px;
-    display: absolute;
-    left: 0px;
-    top: 0px;
-    font-size: auto;
+   
+    
+    font-size: 1000px;
 }
 
 @supports (scroll-snap-type) {
