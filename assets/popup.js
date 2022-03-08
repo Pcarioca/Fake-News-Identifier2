@@ -9,17 +9,20 @@ $(document).ready(function() {
 
 var i = 1;
 var j;
-var text = "slide-";
+var text = "#slide-";
 var textoOnPage = text + i;
-element = document.getElementById(textoOnPage).firstElementChild.firstElementChild;
-
+//element = document.getElementById(textoOnPage).firstElementChild.firstElementChild;
+element= $(textoOnPage).first().first();
 
 while(element!=undefined){
   element.innerHTML += '<br> <button class="myBTN" >more details</button>';
   i++;
   var textoOnPage = text + i;
-  element = document.getElementById(textoOnPage).firstElementChild.firstElementChild;//.children[0];
+  //element = document.getElementById(textoOnPage).first().first(); //.firstElementChild //.firstElementChild;//.children[0];
+  element= $(textoOnPage).first().first();
 }
+
+console.log("passed after while()");
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
@@ -27,7 +30,7 @@ var btn = document.getElementsByClassName("myBTN");
 
 
 // Get the <span> element that closes the modal
-// var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close")[0];
 
 // var buttons = document.getElementsByTagName('button');
 // for (var i = 0, len = buttons.length; i < len; i++) {
