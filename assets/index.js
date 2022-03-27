@@ -6,9 +6,9 @@ audioElement1.setAttribute('src', 'audio/f5.mp3');
 $("#body").append(audioElement1);
 
 
-$("a").mouseenter(function () {
-  audioElement1.play();
-});
+// $("a").mouseenter(function () {
+//   audioElement1.play();
+// });
 
 
 // document.querySelector("body").addEventListener
