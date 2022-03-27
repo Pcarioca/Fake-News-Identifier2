@@ -40,12 +40,12 @@ var span = document.getElementsByClassName("close")[0];
 //     }
 // }
 
-var btns = document.getElementsByClassName("myBTN");
-    for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-			    modal.style.display = "block";
-        });
-    }
+// var btns = document.getElementsByClassName("myBTN");
+//     for (var i = 0; i < btns.length; i++) {
+//         btns[i].addEventListener("click", function () {
+// 			    modal.style.display = "block";
+//         });
+//     }
 
 
 // When the user clicks the button, open the modal 
@@ -65,7 +65,6 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
 
 
 });
