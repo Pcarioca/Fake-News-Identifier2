@@ -32,5 +32,5 @@ It's an app made for Community, but we manually selected news sources for the fr
 <h3>Accomplishments that we're proud of</h3>
 <p>The website looks beautiful, it is useful and works perfectly. And in just under 12 hours.</p>
 
-<h3>What's next for FAKE News Identifier<h3/>
+<h3>What's next for FAKE News Identifier</h3>
 <p>We are going to hire specialists in Journalism and everything that regards News, who will do research on news sources that appear on the website. Also, we may add an IP-based ranking system to recognise people who are truthful with their feedback.</p>
