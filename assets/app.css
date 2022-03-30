@@ -137,6 +137,7 @@ body{
 
 @supports (scroll-snap-type) {
     .slider>a {
+        
         display: none;
     }
 }
