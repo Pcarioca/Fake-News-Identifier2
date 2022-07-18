@@ -53,7 +53,7 @@
         </div>
         <div class="row" style="height: 10vh;"></div>
         <div class="row justify-content-center">
-            <h4 class="white mid none" id="info">This website has been voted <b><span id="trust"></span></b> times as trustworthy and <b><span id="untrust">untrustworthy</span></b></h4>
+            <h4 class="white mid none" id="info">This website has been voted <b><span id="trust"></span></b> times as trustworthy and <b><span id="untrust"> </span></b>times as untrustworthy</h4>
         </div>
     </div>
 
@@ -71,6 +71,7 @@
                     info.classList.remove("none");
                     trust.innerHTML = data.data.upVotes;
                     untrust.innerHTML = data.data.downVotes;
+                    //untrust.
                 })
                 .catch(err => {
                     alert("Website doesn't exists in database")
