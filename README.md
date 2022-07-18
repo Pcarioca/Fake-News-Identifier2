@@ -26,7 +26,6 @@ It's an app made for Community, but we manually selected news sources for the fr
 [x] code the entire website <br>
 [x] Picking the resources <br>
 [x] solve bugs <br>
-[x] finish the pitch <br>
 [ ] Relax and wait for judgement <br>
 <hr>
 <h3>Accomplishments that we're proud of</h3>
