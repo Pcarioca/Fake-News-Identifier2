@@ -8,16 +8,16 @@ Then, just access index.html in the root.
 <h1>FAKE News Identifier</h1>
 
 <h3>Inspiration</h3>
-<p>As Web Development advocates, we think that having access to reliable News sources anytime and within reach is very important. That's why we created FAKE News Identifier, a tool that you can use everywhere, any time and on any device to get genuine news. Check it out!</p>
+<p>As Web Development advocates, I think that having access to reliable News sources anytime and within reach is very important. That's why we created FAKE News Identifier, a tool that you can use everywhere, any time and on any device to get genuine news. Check it out!</p>
 <h3>What it does</h3>
 <p>It displays a list of trustowrthy resources hand-picked and shows it in a beautiful design created by us. It allows the user to scroll through the resources and pick one, without feeling too overwhelmed by all the choices. You can feel free to pick any category and scroll or click the numbers to see the names, links and descriptions of the news sources. Further on, it lets submit news sources that may be unreliable. Further on, all of the users can use the "submit" page to send their own feedback about
 any news reource, and if it receives enough upvotes, it is manually displayed by us in the gallery</p>
 
-<h3>How we built it</h3>
-<p>We used advanced HTML / CSS for the Frontend and Node / MongoDB for the Backend in order to create a stunning design and display or receive useful feed.</p>
+<h3>How I built it</h3>
+<p>I used advanced HTML / CSS for the Frontend and Node / MongoDB for the Backend in order to create a stunning design and display or receive useful feed.</p>
 
 <h3>Challenges we ran into</h3>
-It's an app made for Community, but we manually selected news sources for the front page.
+It's an app made for Community, but I manually selected news sources for the front page.
 <hr>
 <h4>Here are the tasks that I had to do:</h4>
 [x] Figure out the nice design and the colors <br>
@@ -28,8 +28,8 @@ It's an app made for Community, but we manually selected news sources for the fr
 [x] solve bugs <br>
 [ ] Relax and wait for judgement <br>
 <hr>
-<h3>Accomplishments that we're proud of</h3>
-<p>The website looks beautiful, it is useful and works perfectly. And in just under 12 hours.</p>
+<h3>Accomplishments that I'm proud of</h3>
+<p>The website looks beautiful, it is useful and works perfectly.</p>
 
 <h3>What's next for FAKE News Identifier</h3>
-<p>We are going to hire specialists in Journalism and everything that regards News, who will do research on news sources that appear on the website. Also, we may add an IP-based ranking system to recognise people who are truthful with their feedback.</p>
+<p>I am going to hire specialists in Journalism and everything that regards News, who will do research on news sources that appear on the website. Also, we may add an IP-based ranking system to recognise people who are truthful with their feedback.</p>
