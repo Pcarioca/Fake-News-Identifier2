@@ -6,9 +6,14 @@ import Website from './models/website.js'
 import User from './models/user.js'
 dotenv.config()
 const app = express();
-//Initializing MongoDB connection
 
- mongoose.connect(process.env.DB_URL, {useNewUrlParser: true, useUnifiedTopology: true });
+//require('dotenv').config();
+//Initializing MongoDB connection  process.env.DB_URL === "mongodb://localhost:27017/fake"
+
+
+ mongoose.connect("mongodb://localhost:27017/fake", {useNewUrlParser: true, useUnifiedTopology: true });
+ 
+
 const db = mongoose.connection;
 
 //Check connection
