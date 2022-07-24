@@ -11,14 +11,14 @@ const app = express();
 //Initializing MongoDB connection  process.env.DB_URL === "mongodb://localhost:27017/fake"
 
 
- mongoose.connect("mongodb://localhost:27017/fake", {useNewUrlParser: true, useUnifiedTopology: true });
- 
+mongoose.connect("mongodb://localhost:27017/fake", { useNewUrlParser: true, useUnifiedTopology: true });
+
 
 const db = mongoose.connection;
 
 //Check connection
 
-db.once("open", () =>{
+db.once("open", () => {
     console.log("Connected to MongoDB");
 })
 
@@ -26,7 +26,7 @@ db.once("open", () =>{
 
 app.use(express.json());
 app.use(express.urlencoded({
-  extended: true
+    extended: true
 }))
 
 app.use(cors())
@@ -45,16 +45,16 @@ app.post('/', (req, res) => {
     const ip = req.body.ip;
     user.ip = ip;
     website.url = url;
-    if (isSafe){
+    if (isSafe) {
         website.upVotes = 1;
     }
-    else{
+    else {
         website.downVotes = 1;
     }
 
-    User.findOne({ip}, async (err, userFound) => {
-        if(userFound) {
-            console.log(userFound)
+    User.findOne({ ip }, async (err, userFound) => {
+        if (userFound) {
+            console.log(userFound) //!!!!!!
             res.sendStatus(401)
             return;
         }
@@ -63,27 +63,27 @@ app.post('/', (req, res) => {
                 res.sendStatus(500);
                 return;
             }
-            Website.findOne({url}, async (err, websiteFound) => {
+            Website.findOne({ url }, async (err, websiteFound) => {
                 if (err) {
                     res.sendStatus(500);
                     return;
                 }
-                if(websiteFound) {
-                   if(isSafe){
-                       websiteFound.upVotes = websiteFound.upVotes + 1;
-                   }
-                   else{
-                       websiteFound.downVotes = websiteFound.downVotes +1;
-                   }
-                   websiteFound.save(err => {
-                       if (err) {
-                           res.sendStatus(500);
-                           return;
-                       }
-                       res.sendStatus(201)
-                   })
+                if (websiteFound) {
+                    if (isSafe) {
+                        websiteFound.upVotes = websiteFound.upVotes + 1;
+                    }
+                    else {
+                        websiteFound.downVotes = websiteFound.downVotes + 1;
+                    }
+                    websiteFound.save(err => {
+                        if (err) {
+                            res.sendStatus(500);
+                            return;
+                        }
+                        res.sendStatus(201)
+                    })
                 }
-                else{
+                else {
                     website.save(err => {
                         if (err) {
                             res.sendStatus(500);
@@ -95,21 +95,21 @@ app.post('/', (req, res) => {
             })
         })
 
-        
+
     })
 })
 //Listening on the PORT variable and then console logging the port
 app.get('/', (req, res) => {
     const url = req.query.url;
-    Website.findOne({url}, (err, websiteFound) => {
-        if(websiteFound){
-            res.send({upVotes: websiteFound.upVotes, downVotes: websiteFound.downVotes})
+    Website.findOne({ url }, (err, websiteFound) => {
+        if (websiteFound) {
+            res.send({ upVotes: websiteFound.upVotes, downVotes: websiteFound.downVotes })
         }
-        else{
+        else {
             res.sendStatus(404);
         }
     })
 })
-app.listen(PORT, () =>{
+app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`)
 })
