@@ -1,38 +1,65 @@
-.header{
+/* .header {
     text-align: center;
-    color:white;
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+
+} */
+
+.mini-header {
+    text-align: center;
+    color: white;
+    margin-top: 5%;
+    text-decoration: solid underline;
 
 }
-.mini-header{
-    text-align: center;
-    color:white;
-    margin-top:5%;
-    text-decoration: solid underline;
-    
+#cont-all>.sq{
+    border:3px solid white;
+    padding:1%
 }
-.bout{
-    margin-top:2%;
+.bout {
+    margin-top: 2%;
     text-align: center;
-    color:white;
+    color: white;
     font-size: large;
 }
-.resources{
+
+.resources {
     font-weight: 900;
 }
-a{
+
+a {
     color: rgb(255, 255, 255);
     text-decoration: dotted underline;
-   
+
 
 }
-a:hover{
+
+a:hover {
     font-weight: 600;
     color: rgb(255, 255, 255);
 }
+
 .center {
     text-align: center;
     list-style-position: inside;
-  }
-  .bigger{
-      font-size: 30px;
+    font-size: larger;
+}
+
+.bigger {
+    font-size: 30px;
+}
+.bout>p{
+    display: block;
+    background-color: rgba(255, 255, 255, 0.033);
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.center>::marker {
+    
+    font-size: 1em;
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 700;
   }

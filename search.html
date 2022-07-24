@@ -26,38 +26,42 @@
 </head>
 
 <body>
-   
+
     <script src="https://kit.fontawesome.com/e85267642f.js" crossorigin="anonymous"></script>
     <div id="nav"></div>
 
-<div id="cont-all">
-    <div class="container">
-        <div class="row height">
-            <div class="col d-flex justify-content-center height">
-                <img src="assets/cover_final.png" alt="logo" id="head"
-                    class="mx-auto d-block center-block img-responsive">
+    <div id="cont-all">
+        <div class="container">
+            <div class="row height">
+                <div class="col d-flex justify-content-center height">
+                    <img src="assets/cover_final.png" alt="logo" id="head"
+                        class="mx-auto d-block center-block img-responsive">
+                </div>
+            </div>
+            <div class="row" style="height: 10vh;"></div>
+            <div class="row">
+                <div class="col">
+                    <h1 class="mid">Search Websites</h1>
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"
+                    id="input">
+                <button type="button" id="search" class="btn btn-outline-secondary">Search</button>
+
+
+
+            </div>
+            <div class="row" style="height: 10vh;"></div>
+            <div class="row justify-content-center">
+                <h4 class="white mid none" id="info">This website has been voted <b><span id="trust"></span></b> times
+                    as trustworthy and <b><span id="untrust"> </span></b>times as untrustworthy</h4>
             </div>
         </div>
-        <div class="row" style="height: 10vh;"></div>
-        <div class="row">
-            <div class="col">
-                <h1 class="mid">Search Websites</h1>
-            </div>
-        </div>
-        <div class="input-group">
-            <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" id="input">
-            <button type="button" id="search" class="btn btn-outline-secondary">Search</button>
 
-
-
-        </div>
-        <div class="row" style="height: 10vh;"></div>
-        <div class="row justify-content-center">
-            <h4 class="white mid none" id="info">This website has been voted <b><span id="trust"></span></b> times as trustworthy and <b><span id="untrust"> </span></b>times as untrustworthy</h4>
-        </div>
+        
     </div>
-
-    <div id="footer"></div></div>
+    <div id="footer"></div>
     <script src="assets/index.js"></script>
     <script>
         const input = document.querySelector("#input");
@@ -66,7 +70,7 @@
         const untrust = document.querySelector("#untrust")
         const info = document.querySelector("#info")
         button.addEventListener("click", () => {
-            axios.get('http://localhost:5000?url='+input.value)
+            axios.get('http://localhost:5000?url=' + input.value)
                 .then(data => {
                     info.classList.remove("none");
                     trust.innerHTML = data.data.upVotes;
@@ -81,6 +85,14 @@
     </script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src="assets/button.js"></script>
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 14344590;
+        ; (function (n, t, c) { function i(n) { return e._h ? e._h.apply(null, n) : e._q.push(n) } var e = { _q: [], _h: null, _v: "2.0", on: function () { i(["on", c.call(arguments)]) }, once: function () { i(["once", c.call(arguments)]) }, off: function () { i(["off", c.call(arguments)]) }, get: function () { if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load."); return i(["get", c.call(arguments)]) }, call: function () { i(["call", c.call(arguments)]) }, init: function () { var n = t.createElement("script"); n.async = !0, n.type = "text/javascript", n.src = "https://cdn.livechatinc.com/tracking.js", t.head.appendChild(n) } }; !n.__lc.asyncInit && e.init(), n.LiveChatWidget = n.LiveChatWidget || e }(window, document, [].slice))
+    </script>
+    <noscript><a href="https://www.livechat.com/chat-with/14344590/" rel="nofollow">Chat with us</a>, powered by <a
+            href="https://www.livechat.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
 </body>
 
 </html>
