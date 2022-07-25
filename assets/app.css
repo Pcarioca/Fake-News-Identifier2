@@ -44,7 +44,9 @@ body{
 .slider > .p{
     display:block;
 }
-
+.buthide{
+    display:none !important;
+}
 .slides {
     display: flex;
 
