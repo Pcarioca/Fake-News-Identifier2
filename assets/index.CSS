@@ -32,7 +32,7 @@ body {
         #212529 80%, 
         #19446c 100%
   );  
-  animation: AnimateBG 25s cubic-bezier(0.65, 0.47, 0.69, 0.78) infinite;
+  animation: AnimateBG 20s cubic-bezier(0.65, 0.47, 0.69, 0.78) infinite;
 }
 
 @keyframes AnimateBG { 
